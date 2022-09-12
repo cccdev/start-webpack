@@ -5,9 +5,15 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   entry: './src/index.tsx',
   mode: 'development',
+  resolve: {
+    extensions: ['.ts', '.js', '.json', '.tsx', '.jsx',]
+  },
   output: {
     filename: '[name].bundle.js',
     clean: true,
+  },
+  devServer: {
+    static: "./dist"
   },
   module: {
     rules: [
