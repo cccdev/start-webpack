@@ -1,6 +1,7 @@
 const {DefinePlugin} = require('webpack'); //webpack自带的初始化插件
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: './src/index.tsx',
@@ -10,10 +11,18 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
+    path: path.join(__dirname, 'dist'),
     clean: true,
+    publicPath: '/',
   },
   devServer: {
-    static: './dist',
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    compress: true,
+    port: 9000,
+    open: true,
+    hot: true,
   },
   module: {
     rules: [
