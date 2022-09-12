@@ -1,19 +1,19 @@
-const { DefinePlugin } = require('webpack');//webpack自带的初始化插件
+const {DefinePlugin} = require('webpack'); //webpack自带的初始化插件
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
   mode: 'development',
   resolve: {
-    extensions: ['.ts', '.js', '.json', '.tsx', '.jsx',]
+    extensions: ['.ts', '.js', '.json', '.tsx', '.jsx'],
   },
   output: {
     filename: '[name].bundle.js',
     clean: true,
   },
   devServer: {
-    static: "./dist"
+    static: './dist',
   },
   module: {
     rules: [
@@ -42,16 +42,16 @@ module.exports = {
         loader: 'esbuild-loader',
         options: {
           loader: 'jsx',
-          target: 'es2015'
-        }
+          target: 'es2015',
+        },
       },
       {
         test: /\.jsx$/,
         loader: 'esbuild-loader',
         options: {
           loader: 'jsx',
-          target: 'es2015'
-        }
+          target: 'es2015',
+        },
       },
       {
         test: /\.tsx$/,
@@ -59,7 +59,7 @@ module.exports = {
         options: {
           loader: 'tsx',
           target: 'es2015',
-        }
+        },
       },
     ],
   },

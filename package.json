@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "webpack react初始化配置",
   "main": "index.tsx",
+  "prettier": "prettier-airbnb-config",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "prettier": "prettier --write ."
   },
   "keywords": [],
   "author": "",
@@ -23,6 +25,8 @@
     "postcss": "^8.4.16",
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.8.1",
+    "prettier": "^2.7.1",
+    "prettier-airbnb-config": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "style-loader": "^3.3.1",
