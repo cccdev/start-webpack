@@ -1,3 +1,7 @@
+const { DefinePlugin } = require('webpack');//webpack自带的初始化插件
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 module.exports = {
   entry: './src/index.js',
   mode: 'development',
@@ -29,4 +33,14 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'React模板APP',
+      template: './public/template.html', //指定index.html模板而不用插件内置的ejs模板
+    }),
+    new DefinePlugin({
+      BASE_URL: '"./"', // 可以替换模板中的<%=BASE_URL %> 为”./“
+    }),
+  ],
 };

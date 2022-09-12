@@ -10,6 +10,19 @@ React SPA应用模板
 | Less  |  ✅  |
 | React  |   |
 
+
+### Loader
+css loader \
+style loader \
+less loader \
+PostCSS loader \
+file loader \
+url loader
+
+### Plugin
+html webpack plugin \
+clean webpack plugin
+
 ## 运行
 ### 安装依赖
 ```shell
