@@ -1,3 +1,5 @@
+import './index.css';
+
 function createElement() {
   const div = document.createElement('div');
   div.innerHTML = 'hello world';
