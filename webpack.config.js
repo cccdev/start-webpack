@@ -66,7 +66,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'React模板APP',
+      title: 'React APP 个人脚手架',
       template: './public/template.html', //指定index.html模板而不用插件内置的ejs模板
     }),
     new DefinePlugin({

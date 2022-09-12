@@ -6,14 +6,15 @@ React SPA 应用模板，已引入常用 loader 和 plugin
 
 支持 HMR 热更新
 
-| 配置项  | 是否支持 |
-| :-----: | :------: |
-|   CSS   |    ✅    |
-| PostCSS |    ✅    |
-| assets  |    ✅    |
-|  Less   |    ✅    |
-| jsx/tsx |    ✅    |
-|   HMR   |    ✅    |
+|  配置项  | 是否支持 |
+| :------: | :------: |
+|   CSS    |    ✅    |
+| PostCSS  |    ✅    |
+|  assets  |    ✅    |
+|   Less   |    ✅    |
+| jsx/tsx  |    ✅    |
+|   HMR    |    ✅    |
+| prettier |    ✅    |
 
 ### Loader
 
