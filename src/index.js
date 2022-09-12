@@ -1,4 +1,5 @@
 import './index.css';
+import './style.less';
 
 function createElement() {
   const div = document.createElement('div');
