@@ -1,5 +1,5 @@
 ## 介绍
-React SPA应用模板
+React SPA应用模板，已引入常用loader和plugin，使用ESBuild编译，速度快如闪电🌩
 
 
 | 配置项  |  是否支持 |
@@ -17,7 +17,8 @@ style loader \
 less loader \
 PostCSS loader \
 file loader \
-url loader
+url loader \
+esbuild loader
 
 ### Plugin
 html webpack plugin \

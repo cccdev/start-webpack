@@ -31,6 +31,14 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.js$/,
+        loader: 'esbuild-loader',
+        options: {
+          loader: 'jsx',
+          target: 'es2015'
+        }
+      },
     ],
   },
   plugins: [
