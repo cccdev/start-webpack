@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.tsx',
   mode: 'development',
   output: {
     filename: '[name].bundle.js',
@@ -37,6 +37,22 @@ module.exports = {
         options: {
           loader: 'jsx',
           target: 'es2015'
+        }
+      },
+      {
+        test: /\.jsx$/,
+        loader: 'esbuild-loader',
+        options: {
+          loader: 'jsx',
+          target: 'es2015'
+        }
+      },
+      {
+        test: /\.tsx$/,
+        loader: 'esbuild-loader',
+        options: {
+          loader: 'tsx',
+          target: 'es2015',
         }
       },
     ],
